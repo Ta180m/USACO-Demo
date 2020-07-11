@@ -1,0 +1,14 @@
+read in N
+
+constraints[N][2]
+for i from 1 to N:
+	read in constraints[i][1] and constraints[i][2]
+
+for every permutation P of [ Bessie, Buttercup, Belinda, Beatrice, Bella, Blue, Betsy, Sue ]:
+	for i from 1 to N:
+		bad = false
+		if the position of constraints[i][1] is NOT next to position of constraints[i][2]
+			then set bad to true
+
+	if NOT bad
+		then output P
