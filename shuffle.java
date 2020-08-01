@@ -27,6 +27,8 @@ public class shuffle {
 		for(int i = 1; i <= n; i++) {
 			finalLocs[i] = Integer.parseInt(st.nextToken());
 		}
+
+		br.close();
 		
 		// allocate an array to store the original locations of all cows
 		int[] originalLocations = new int[n+1];

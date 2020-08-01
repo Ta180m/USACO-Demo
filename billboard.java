@@ -26,6 +26,8 @@ public class billboard {
 		int y5 = Integer.parseInt(st.nextToken());
 		int x6 = Integer.parseInt(st.nextToken());
 		int y6 = Integer.parseInt(st.nextToken());
+
+		br.close();
 		
 		// the visible area is the sum of the visible area of the first billboard and the second billboard
 		int combinedArea = visibleArea(x1, y1, x2, y2, x5, y5, x6, y6) + visibleArea(x3, y3, x4, y4, x5, y5, x6, y6);

@@ -17,6 +17,8 @@ public class measurement {
 			cow[i] = st.nextToken();
 			change[i] = Integer.parseInt(st.nextToken());
 		}
+
+		br.close();
 		
 		// the milk variables track the amount of milk that each cows was last known to produce
 		int bessieMilk = 7, elsieMilk = 7, mildredMilk = 7;
@@ -41,7 +43,7 @@ public class measurement {
 			}
 			// compute the highest milk total and see which cows produced the most milk 
 			int highestMilk = Math.max(bessieMilk, Math.max(elsieMilk, mildredMilk));
-			boolean bessieOnNext = bessieMilk == highestMilk;
+			boolean bessieOnNext = (bessieMilk == highestMilk);
 			boolean elsieOnNext = elsieMilk == highestMilk;
 			boolean mildredOnNext = mildredMilk == highestMilk;
 			if(bessieOn != bessieOnNext || elsieOn != elsieOnNext || mildredOn != mildredOnNext) {
