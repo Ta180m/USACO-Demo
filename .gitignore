@@ -1,7 +1,4 @@
-*
-!*/
-!*.*
-.vscode
+.vscode/*
 *.in
 *.out
 *.ans
